@@ -56,18 +56,23 @@ def index():
 
 
 @app.route("/test")
-def test():
-    import requests
 
-    response = requests.get('https://www.boredapi.com/api/activity')
-    print(response)
-    if response.status_code == 200:
-        data = response.json()["activity"]
-    else:
-        data = "ERROR"
+def index():
+    return "test works"
 
-    return render_template("main.html", data=data)
 
+# def test():
+#     import requests
+#
+#     response = requests.get('https://www.boredapi.com/api/activity')
+#     print(response)
+#     if response.status_code == 200:
+#         data = response.json()["activity"]
+#     else:
+#         data = "ERROR"
+#
+#     return render_template("main.html", data=data)
+#
 
 @app.errorhandler(404)
 @app.errorhandler(500)
