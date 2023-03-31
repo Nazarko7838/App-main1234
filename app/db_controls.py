@@ -1,5 +1,5 @@
 import json
-from .database import User, Event, session
+from app.database import User, Event, session
 
 
 def create_json_from(obj):

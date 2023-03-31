@@ -1,13 +1,13 @@
 
 
-from flask import render_template, request, redirect, url_for, make_response, jsonify
-from .database import session
+from flask import render_template, request, make_response, jsonify
+from app.database import session
 from werkzeug.security import check_password_hash, generate_password_hash
-from .db_controls import add_new_item, get_events_by, delete_user
-from .database import User, Event
+from app.db_controls import add_new_item, get_events_by, delete_user
+from app.database import User, Event
 from . import app
-from datetime import timedelta, datetime
-from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
+from datetime import timedelta
+from flask_jwt_extended import create_access_token
 
 
 def add_event_to_database(event_data):
