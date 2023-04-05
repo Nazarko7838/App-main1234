@@ -1,0 +1,121 @@
+body{
+    background-image: url("/ToDoList_1920x1080.jpg");
+    background-repeat: no-repeat;
+}
+#display-events{
+    background-color: antiquewhite;
+    width: 50vw;
+    font-size: 30px;
+    color:rgb(56, 56, 56);
+    float: right;
+    margin-right: 10vw;
+    margin-top: 3vw;
+    text-align: center;
+    padding: 0%;
+    
+}
+h4, h3{
+    margin: 5px;
+    border-width: 3px;
+}
+
+div{
+    border-style:dotted;
+    border-width: 2px;
+    border-color: rgb(88, 88, 88);
+}
+.single-day-events{
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(88, 88, 88);
+}
+#event-form{
+    background-color:whitesmoke;
+    width: 20vw;
+    margin-left: 4vw;
+    font-size: 30px;
+    color:rgb(56, 56, 56);
+    margin-top: 3vw;
+    text-align: center;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: rgb(88, 88, 88);
+    display: inline-block;
+}
+#logoutButton{
+    float: left;
+}
+input{
+    background-color: azure;
+    border-radius: 3px;
+    margin: 10px;
+}
+#date{
+    height: 20px;
+    width: 10vw;
+    text-align: center;
+}
+#header{
+    height: 25px;
+    width: 12vw;
+}
+#description{
+    width: 17vw;
+    height: 8vw;
+}
+#submit{
+    font-size: 25px;
+    border-style: outset;
+    border-color: gray;
+    border-width: 8px;
+}
+#submit:active{
+    border-style: inset;
+    border-width: 7px;
+}
+#logoutButton{
+    font-size: 20px;
+    border-style: outset;
+    border-color: gray;
+    border-width: 5px;
+}
+#logoutButton:active{
+    border-style: inset;
+}
+
+#login-form{
+    background-color:whitesmoke;
+    width: 20vw;
+    margin-left: 4vw;
+    font-size: 30px;
+    color:rgb(56, 56, 56);
+    margin-top: 3vw;
+    text-align: center;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: rgb(88, 88, 88);
+    display: inline-block;
+}
+#form_to_SignUp{
+    font-size: 20px;
+    border-style: outset;
+    border-color: gray;
+    border-width: 6px;
+    float: left;
+}
+#form_to_SignUp:active{
+    border-style: inset;
+}
+#signup-form{
+    background-color:whitesmoke;
+    width: 20vw;
+    margin-left: 4vw;
+    font-size: 30px;
+    color:rgb(56, 56, 56);
+    margin-top: 3vw;
+    text-align: center;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: rgb(88, 88, 88);
+    display: inline-block;
+}

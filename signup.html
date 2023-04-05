@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign up</title>
+    <link rel="stylesheet", href="/app/style.css">
     <script src="app.js" type="module"></script>
 </head>
 <body>
-<h3>Sign up</h3>
 <form id="signup-form" method="post">
   <label for="nickname">Nickname</label><br>
-  <input type="text" id="nickname" name="nickname" autofocus=""><br>
+  <input style="height: 20px; width: 15vw;" type="text" id="nickname" name="nickname" autofocus=""><br>
 
   <label for="email">Email</label><br>
-  <input type="text" id="email" name="email" autofocus=""><br>
+  <input style="height: 20px; width: 15vw;" type="text" id="email" name="email" autofocus=""><br>
 
   <label for="password">Password</label><br>
-  <input type="text" id="password" name="password"><br>
+  <input style="height: 20px; width: 15vw;" type="text" id="password" name="password"><br>
 
-  <input type="submit" value="Sign up">
+  <input id="submit" type="submit" value="Sign up">
+</form>
+<form id = "form_to_SignUp" action="http://127.0.0.1:8000/login.html" method="get">
+  <input style="border: none; background: none; font-size: 20px; color:rgb(56, 56, 56); font-weight: 600;" type="submit" value="Login">
 </form>
 </body>
 </html>

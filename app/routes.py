@@ -1,5 +1,3 @@
-
-
 from flask import render_template, request, make_response, jsonify
 from app.database import session
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -55,10 +53,9 @@ def index():
     return render_template("main.html")
 
 
-@app.route("/test")
-
-def index():
-    return "test works"
+# @app.route("/test")
+# def index():
+#     return "test works"
 
 
 # def test():

@@ -1,10 +1,16 @@
 window.onload = (event) => {
 
+//    const routes = [
+//        {path: '/App-main1234', handler: homeHandler},
+//        {path: '/App-main1234/index.html', handler: homeHandler},
+//        {path: '/App-main1234/login.html', handler: loginHandler},
+//        {path: '/App-main1234/signup.html', handler: signupHandler}
+//    ]
     const routes = [
-        {path: '/App-main1234', handler: homeHandler},
-        {path: '/App-main1234/index.html', handler: homeHandler},
-        {path: '/App-main1234/login.html', handler: loginHandler},
-        {path: '/App-main1234/signup.html', handler: signupHandler}
+        {path: '/', handler: homeHandler},
+        {path: '/index.html', handler: homeHandler},
+        {path: '/login.html', handler: loginHandler},
+        {path: '/signup.html', handler: signupHandler}
     ]
 
     handleUrlChange();
@@ -38,6 +44,7 @@ window.onload = (event) => {
     })}
 
     function loginHandler () {
+//        console.log("login")
         const loginForm = document.getElementById("login-form");
         const urlLogin = 'http://127.0.0.1:5000/login';
 //        console.log(loginForm)
@@ -140,7 +147,7 @@ window.onload = (event) => {
 
             createElementAndAppendChild("h3", event.header, singleEvent);
 
-            createElementAndAppendChild("span", event.time, singleEvent);
+            createElementAndAppendChild("h4", event.time, singleEvent);
 
             createElementAndAppendChild("span", event.description, singleEvent);
         })
