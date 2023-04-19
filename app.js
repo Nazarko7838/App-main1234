@@ -15,6 +15,26 @@ window.onload = (event) => {
 
     handleUrlChange();
 
+       /* function getWeather() {
+  const apiKey = "f16d97d665913ed7c12d1c39e2ac53de";
+  const city = "КИЇВ";
+  const url = `https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key}`;
+
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      const weatherWidget = document.getElementById("weather-widget");
+      const temperature = data.main.temp;
+      const description = data.weather[0].description;
+      weatherWidget.innerHTML = `Температура в ${city}: ${temperature}°C. ${description}.`;
+    })
+    .catch((error) => {
+      console.error("Помилка при отриманні погодніх даних: ", error);
+    });
+}
+
+getWeather();*/
+
 
     function handleUrlChange () {
         const path = window.location.pathname;
@@ -48,6 +68,10 @@ window.onload = (event) => {
         const loginForm = document.getElementById("login-form");
         const urlLogin = 'http://127.0.0.1:5000/login';
 //        console.log(loginForm)
+        const date = new Date().toISOString().slice(0,10);
+        getEventsByDate(date)
+        .then(data => showEvents(data))
+
 
         loginForm.addEventListener("submit", (event) => {
             event.preventDefault();
@@ -63,12 +87,17 @@ window.onload = (event) => {
                 }
             });
     })
+
     }
 
     function signupHandler () {
         const signupForm = document.getElementById("signup-form");
         const urlSignup = 'http://127.0.0.1:5000/signup';
         console.log("Signup")
+
+        const date = new Date().toISOString().slice(0,10);
+        getEventsByDate(date)
+        .then(data => showEvents(data))
 
         signupForm.addEventListener("submit", (event) => {
             event.preventDefault();
@@ -130,6 +159,8 @@ window.onload = (event) => {
 
         const eventsDiv = document.getElementById("display-events");
 
+
+
         const singleDayEvents = createElementAndAppendChild("div", null, eventsDiv)
         singleDayEvents.classList.add("single-day-events");
 
@@ -175,4 +206,35 @@ window.onload = (event) => {
             currentDate.setDate(currentDate.getDate() + 1)
         }
     }
+
+
+
+
+
+
+
+function weatherBalloon() {
+  fetch('https://api.openweathermap.org/data/2.5/weather?id=692372&appid=bed3513317b5941bc39dee432c733352&unit=metric&lang=ua')
+  .then(function(resp) { return resp.json() }) // Convert data to json
+  .then(function(data) {
+    drawWeather(data);
+  })
+  .catch(function() {
+    // catch any errors
+  });
+
+
+}
+
+  weatherBalloon();
+
+
+
+function drawWeather( d ) {
+	var celcius = Math.round(parseFloat(d.main.temp)-273.15);
+	var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
+	document.getElementById('weather-description').innerHTML = d.weather[0].description;
+	document.getElementById('temp').innerHTML = celcius + '&deg;';
+	document.getElementById('location').innerHTML = d.name;
+}
 }

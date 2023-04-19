@@ -1,31 +1,40 @@
+html{
+    /* background-color: #224362; */
+    /* background-image: radial-gradient(circle at 50% 50%, #107282, #234161) !important; */
+}
 body{
-    background-image: url("/ToDoList_1920x1080.jpg");
-    background-repeat: no-repeat;
+    margin-top: 0px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: white;
+    /* background-image: url("/ToDoList_1920x1080.jpg"); */
+    /* background-image: radial-gradient(circle at 50% 50%, #107282, #234161) !important; */
 }
 #display-events{
-    background-color: antiquewhite;
-    width: 50vw;
+    /* background-color:whitesmoke; */
+    width: 55vw;
     font-size: 30px;
     color:rgb(56, 56, 56);
     float: right;
-    margin-right: 10vw;
+    margin-right: 4vw;
     margin-top: 3vw;
-    text-align: center;
-    padding: 0%;
+    text-align: left;
     
 }
-h4, h3{
-    margin: 5px;
+h4{
+    margin: 0px;
     border-width: 3px;
+    /* border-bottom:dotted ; */
+}
+h3{
+    margin: 0px;
+    margin-top: 50px;
+    /* border-top:dotted ; */
 }
 
-div{
-    border-style:dotted;
-    border-width: 2px;
-    border-color: rgb(88, 88, 88);
-}
+
 .single-day-events{
-    border-style: solid;
+    /* border-style:dotted; */
     border-width: 3px;
     border-color: rgb(88, 88, 88);
 }
@@ -35,15 +44,13 @@ div{
     margin-left: 4vw;
     font-size: 30px;
     color:rgb(56, 56, 56);
-    margin-top: 3vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
     text-align: center;
     border-style: dashed;
     border-width: 3px;
     border-color: rgb(88, 88, 88);
     display: inline-block;
-}
-#logoutButton{
-    float: left;
 }
 input{
     background-color: azure;
@@ -64,20 +71,23 @@ input{
     height: 8vw;
 }
 #submit{
-    font-size: 25px;
+    font-size: 1.5vw;
     border-style: outset;
     border-color: gray;
-    border-width: 8px;
+    border-width: 4px;
 }
 #submit:active{
     border-style: inset;
-    border-width: 7px;
+    border-width: 4px;
 }
 #logoutButton{
     font-size: 20px;
     border-style: outset;
     border-color: gray;
-    border-width: 5px;
+    border-width: 4px;
+    display: inline-block;
+    margin-top: -100px;
+    margin-left: 5vw;
 }
 #logoutButton:active{
     border-style: inset;
@@ -89,7 +99,8 @@ input{
     margin-left: 4vw;
     font-size: 30px;
     color:rgb(56, 56, 56);
-    margin-top: 3vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
     text-align: center;
     border-style: dashed;
     border-width: 3px;
@@ -100,8 +111,11 @@ input{
     font-size: 20px;
     border-style: outset;
     border-color: gray;
-    border-width: 6px;
-    float: left;
+    border-width: 4px;
+    display: inline-block;
+    margin-top: 5px; 
+    margin-left: 5vw;
+    
 }
 #form_to_SignUp:active{
     border-style: inset;
@@ -112,10 +126,76 @@ input{
     margin-left: 4vw;
     font-size: 30px;
     color:rgb(56, 56, 56);
-    margin-top: 3vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
     text-align: center;
     border-style: dashed;
     border-width: 3px;
     border-color: rgb(88, 88, 88);
     display: inline-block;
+}
+.header{
+    background-image: radial-gradient(circle at 50% 50%, #107282, #234161) !important;
+    height: 190px;
+    margin-right: -5vw;
+    margin-left: -5vw;
+    border: none;
+}
+.h1-header{
+    text-align: center;
+    font-size: 55px;
+    color: #e0e0e0;
+    margin-top: -120px;
+}
+.h2-header{
+    text-align: center;
+    margin-top: -25px;
+    color: #c0c0c0;
+}
+#weather{
+    float: right;
+    border: none;
+    margin-top: -120px;
+    display: block;
+    margin-right: 6vw;
+    font-size: 20px;
+}
+#location{
+    border: none;
+    margin: 0px;
+}
+#weather-description{
+    border: none;
+    margin: 0px;
+
+}
+#temp{
+    margin: 0px;
+}
+.img-weather{
+    width: 60px;
+    height: 60px;
+    margin-right: 16%;
+    float: right;
+    border: none;
+    margin-top: -110px;
+    display: block;
+
+}
+
+.logo-img{
+    background-image: url("/Coat_Of_Arms_of_Stryi.png");
+    background-size: contain;
+    margin-right: 0px;
+    width: 87px;
+    height: 120px;
+    display:inline-block;
+    margin-top: 25px;
+
+    margin-left: 7vw;
+
+}
+
+.footer{
+    background-color: gold;
 }

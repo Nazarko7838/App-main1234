@@ -7,22 +7,38 @@
     <script src="app.js" type="module"></script>
 </head>
 <body>
-<button id="logoutButton">Log out</button>
-<div id="display-events"></div>
-    <form method="post" id="event-form">
-        <label for="date">Date</label><br>
-        <input type="date" id="date" name="date"><br>
+    <div class="header">
+        <button id="logoutButton">Вихід</button>
+        <div class="logo-img"></div>
 
-        <label for="time">Time</label><br>
-        <input type="time" id="time" name="time"><br>
+        <h1 class="h1-header">Cтрий сьогодні</h1>
+        <h2 class="h2-header">Події стрия сьогодні</h2>
+        <img class="img-weather" src="/weather-logo.png"> 
+        <div id="weather">          
+        <div id="location"></div>
+        <h1 id="temp"></h1>
+        <div id="weather-description"></div> 
+        </div>
+    </div>
+    <div id="display-events">
+        <span id="event-description"></span>
+    </div>
+        <form method="post" id="event-form">
+            <p style="margin-top: 0%; margin-bottom: 0%; border-bottom: dashed; border-width: 3px; border-color: rgb(88, 88, 88);">Добавити подію</p><br>
+            <label for="date">Дата</label><br>
+            <input type="date" id="date" name="date"><br>
 
-        <label for="header">Header</label><br>
-        <input type="text" id="header" name="header"><br>
+            <label for="time">Час</label><br>
+            <input type="time" id="time" name="time"><br>
 
-        <label for="description">Description</label><br>
-        <input type="text" id="description" name="description"><br>
+            <label for="header">Заголовок</label><br>
+            <input type="text" id="header" name="header"><br>
 
-        <input type="submit" id="submit" value="Submit">
-    </form>
+            <label for="description">Опис</label><br>
+            <input type="text" id="description" name="description"><br>
+
+            <input type="submit" id="submit" value="Надіслати">
+        </form>
+
 </body>
 </html>

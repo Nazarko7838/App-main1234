@@ -7,18 +7,36 @@
     <script src="app.js" type="module"></script>
 </head>
 <body>
+
+
+
+    <div class="header">
+        <form id = "form_to_SignUp" action="http://127.0.0.1:8000/signup.html" method="get">
+            <input style=" border: none; background: none; font-size: 20px; color: #e0e0e0; font-weight: 600;" type="submit" value="Реєстрація">
+        </form>
+        <form style="margin-left: 0px;" id = "form_to_SignUp" action="http://127.0.0.1:8000/login.html" method="get">
+        <input style="border: none; background: none; font-size: 20px; color: #e0e0e0; font-weight: 600;" type="submit" value="Увійти">
+        </form>
+        <h1 style="margin-top: -20px;" class="h1-header">Cтрий сьогодні</h1>
+        <h2 class="h2-header">Події стрия сьогодні</h2>
+        <img class="img-weather" src="/weather-logo.png"> 
+        <div id="weather">
+            <div id="location"></div>
+            <h1 id="temp"></h1>
+            <div id="weather-description"></div>
+        </div>
+
+    </div>
+    <div id="display-events"></div>
     <form id="login-form" method="post">
-        <label for="nickname">Nickname</label><br>
+        <label for="nickname">Логін</label><br>
         <input style="height: 20px; width: 15vw;" type="text" id="nickname" name="nickname" autofocus=""><br>
 
-        <label for="password">Password</label><br>
+        <label for="password">Пароль</label><br>
         <input style="height: 20px; width: 15vw;"type="text" id="password" name="password"><br>
 
-        <input id="submit" type="submit" value="Login">
+        <input id="submit" type="submit" value="Вхід">
 
-    </form>
-    <form id = "form_to_SignUp" action="http://127.0.0.1:8000/signup.html" method="get">
-        <input style="border: none; background: none; font-size: 20px; color:rgb(56, 56, 56); font-weight: 600;" type="submit" value="SignUp">
     </form>
 </body>
 </html>
