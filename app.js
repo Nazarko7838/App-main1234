@@ -1,17 +1,17 @@
 window.onload = (event) => {
 
-//    const routes = [
-//        {path: '/App-main1234', handler: homeHandler},
-//        {path: '/App-main1234/index.html', handler: homeHandler},
-//        {path: '/App-main1234/login.html', handler: loginHandler},
-//        {path: '/App-main1234/signup.html', handler: signupHandler}
-//    ]
-    const routes = [
-        {path: '/', handler: homeHandler},
-        {path: '/index.html', handler: homeHandler},
-        {path: '/login.html', handler: loginHandler},
-        {path: '/signup.html', handler: signupHandler}
-    ]
+   const routes = [
+       {path: '/App-main1234', handler: homeHandler},
+       {path: '/App-main1234/index.html', handler: homeHandler},
+       {path: '/App-main1234/login.html', handler: loginHandler},
+       {path: '/App-main1234/signup.html', handler: signupHandler}
+   ]
+//     const routes = [
+//         {path: '/', handler: homeHandler},
+//         {path: '/index.html', handler: homeHandler},
+//         {path: '/login.html', handler: loginHandler},
+//         {path: '/signup.html', handler: signupHandler}
+//     ]
 
     handleUrlChange();
 
