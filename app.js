@@ -50,7 +50,7 @@ getWeather();*/
 
     function homeHandler () {
         const eventForm = document.getElementById("event-form");
-        const urlAddEvent = 'http://127.0.0.1:5000/create_event';
+        const urlAddEvent = 'http://nazar6725.pythonanywhere.com0/create_event';
         const date = new Date().toISOString().slice(0,10);
 
         getEventsByDate(date)
@@ -66,7 +66,7 @@ getWeather();*/
     function loginHandler () {
 //        console.log("login")
         const loginForm = document.getElementById("login-form");
-        const urlLogin = 'http://127.0.0.1:5000/login';
+        const urlLogin = 'http://nazar6725.pythonanywhere.com/login';
 //        console.log(loginForm)
         const date = new Date().toISOString().slice(0,10);
         getEventsByDate(date)
@@ -92,7 +92,7 @@ getWeather();*/
 
     function signupHandler () {
         const signupForm = document.getElementById("signup-form");
-        const urlSignup = 'http://127.0.0.1:5000/signup';
+        const urlSignup = 'http://nazar6725.pythonanywhere.com/signup';
         console.log("Signup")
 
         const date = new Date().toISOString().slice(0,10);
@@ -115,7 +115,7 @@ getWeather();*/
 
 
     function getEventsByDate (date) {
-        const apiUrlGet = `http://127.0.0.1:5000/get_events_by_date/${date}`;
+        const apiUrlGet = `http://nazar6725.pythonanywhere.com/get_events_by_date/${date}`;
 
         return fetch(apiUrlGet, {
             method: "GET",})
